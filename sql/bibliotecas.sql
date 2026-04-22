@@ -93,3 +93,9 @@ select distinct nombre from autores;
 select pais , count(*)
 from autores
 group by pais;
+
+--joins
+
+select libros.titulo, autores.nombre
+from libros
+join autores on libros.autor_id
