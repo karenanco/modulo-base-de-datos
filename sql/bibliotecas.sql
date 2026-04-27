@@ -95,7 +95,19 @@ from autores
 group by pais;
 
 --joins
+--inner join
+select libros.titulo, autores.nombre
+from libros
+join autores on libros.autor_id = autores.id
 
 select libros.titulo, autores.nombre
 from libros
-join autores on libros.autor_id
+left join autores on libros.autor_id = autores.id
+
+select libros.titulo, autores.nombre
+from libros
+right join autores on libros.autor_id = autores.id
+
+INSERT INTO libros (titulo, autor_id, precio) VALUES
+('Libro sin autor', null, 10000),
+('Libro sin autor', null, 15000);
