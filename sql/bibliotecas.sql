@@ -111,3 +111,5 @@ right join autores on libros.autor_id = autores.id
 INSERT INTO libros (titulo, autor_id, precio) VALUES
 ('Libro sin autor', null, 10000),
 ('Libro sin autor', null, 15000);
+
+
